@@ -9,6 +9,7 @@
 body {
   height: 100vh;
   background: url(./todobg.jpg) no-repeat center center/ cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
   display: flex;
   justify-content: center;
@@ -23,6 +24,8 @@ body {
   box-shadow: 0 0 3px;
 
   display: flex;
+
+  margin-bottom: 10px;
 }
 
 input {
@@ -46,4 +49,57 @@ input {
 #add-task:hover {
   background-color: blue;
   color: wheat;
+}
+
+/* Styling for Added Task */
+
+.task {
+  width: 100%;
+  background-color: wheat;
+  border-radius: 10px;
+  box-shadow: 0 0 3px;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task li {
+  list-style: none;
+  flex: 4;
+  padding: 5px;
+  font-size: 1.3rem;
+  margin: 5px;
+}
+
+.task button {
+  flex: 1;
+  border-radius: 5px;
+  background-color: cyan;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.task .checkTask {
+  color: orangered;
+  margin-right: 5px;
+  border: solid 2px orangered;
+  font-size: 1.5rem;
+}
+
+.task .checkTask:hover {
+    background-color: orangered;
+    color: wheat;
+}
+
+.task .deleteTask {
+  color: brown;
+  margin-right: 5px;
+  border: solid 2px brown;
+  font-size: 1.5rem;
+}
+
+.task .deleteTask:hover {
+    background-color: brown;
+    color: wheat;
 }
